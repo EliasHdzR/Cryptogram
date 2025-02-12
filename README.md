@@ -1,1 +1,1 @@
-Is a english proyect
+It's a english proyect
