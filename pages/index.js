@@ -293,18 +293,14 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Cryptograma by Alicia Ramírez</title>
+        <title>Cryptograma</title>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>Cryptograma</h1>
         <p>
           To reveal the quote, click/tap on an emoji and enter a letter with
-          your keyboard. The same emoji represents the same letter. (
-          <a href="https://en.wikipedia.org/wiki/Cryptogram">
-            Learn more about Cryptograms
-          </a>
-          )
+          your keyboard. 
         </p>
         <div className="tools">
           <button className="reset" type="button" onClick={resetPuzzle}>
@@ -325,9 +321,6 @@ export default function Home() {
           onKeyDown={enterGuess}
         />
       </main>
-      <footer className={styles.footer}>
-        <a href="https://aliciaramirez.com">By Alicia Ramírez</a>
-      </footer>
     </div>
   );
 }
