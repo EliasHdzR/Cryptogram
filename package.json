@@ -6,7 +6,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "gh-pages -d out --nojekyll --cname www.mywebsite.com",
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'www.mywebsite.com' > ./out/CNAME"
   },
   "dependencies": {
     "next": "13.5.5",
